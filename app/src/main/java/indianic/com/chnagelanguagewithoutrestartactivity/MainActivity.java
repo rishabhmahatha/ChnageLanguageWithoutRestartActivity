@@ -34,23 +34,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        Configuration newConfig = new Configuration();
         switch (v.getId()) {
             case R.id.btn_china:
-                Configuration newConfig = new Configuration();
                 newConfig.locale = Locale.CHINA;
                 onConfigurationChanged(newConfig);
                 break;
 
             case R.id.btn_english:
-                Configuration newConfig1 = new Configuration();
-                newConfig1.locale = Locale.ENGLISH;
-                onConfigurationChanged(newConfig1);
+                newConfig.locale = Locale.ENGLISH;
+                onConfigurationChanged(newConfig);
                 break;
 
             case R.id.btn_france:
-                Configuration newConfig2 = new Configuration();
-                newConfig2.locale = Locale.FRENCH;
-                onConfigurationChanged(newConfig2);
+                newConfig.locale = Locale.FRENCH;
+                onConfigurationChanged(newConfig);
                 break;
         }
     }
