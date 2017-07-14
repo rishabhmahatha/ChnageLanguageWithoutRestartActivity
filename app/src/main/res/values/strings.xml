@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChnageLanguageWithoutRestartActivity</string>
+    <string name="language">Hello World!!!</string>
+    <string name="chinese">chinese</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+</resources>
